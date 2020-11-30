@@ -116,6 +116,7 @@ public class Elective  {
         for(String ignored :electives)
             System.out.println(electives);
             Collections.sort(electives);
+
     }
 }
 

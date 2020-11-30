@@ -20,7 +20,7 @@ public class ElectiveServiceImplTest {
 
     @Autowired
     private static ElectiveService eService;
-    private static Elective elect = ElectiveFactory.createElective(000110, "JavaScript");
+    private static Elective elect = ElectiveFactory.createElective("000110", "JavaScript");
 
     @Test
     public void a_create() {
@@ -42,7 +42,7 @@ public class ElectiveServiceImplTest {
     public void c_update() {
         Elective e = new Elective.Builder()
                 .copy(elect)
-                .setElectCode(000111)
+                .setElectCode("000111")
                 .build();
         e = eService.update(e);
         System.out.println(e);

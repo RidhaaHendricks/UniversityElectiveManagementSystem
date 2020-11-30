@@ -13,7 +13,7 @@ public class ElectiveFactoryTest {
     public void createElective() {
         ElectiveFactory ef = new ElectiveFactory();
 
-        Elective e = ef.createElective(000155, "BNA");
+        Elective e = ef.createElective("000155", "BNA");
         Assert.assertEquals(java.util.Optional.of(000155), e.getElectCode());
         Assert.assertEquals("BNA", e.getElectName());
     }
